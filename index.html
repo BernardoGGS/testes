@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body class="body1">
     <div class="container_form">
 
         <h1>Formulário de Cadastro</h1>
@@ -30,14 +30,14 @@
 
             <div class="form_grupo">
                 
-                <label for="estadocivil" class="text">Turma</label>
-                <select name="estadocivil" class="dropdown" required>
+                <label for="Turma" class="text">Turma</label>
+                <select name="Turma" class="dropdown" required>
                     
-                    <option selected disabled class="form_select_option" value="">Selecione</option>
-                    <option value="Solteiro" class="form_select_option">3° A-NEM</option>
-                    <option value="Casado" class="form_select_option">3° B-NEM </option>
-                    <option value="Divorciado" class="form_select_option">3° C-DS</option>                    
-                    <option value="Viúvo" class="form_select_option">3° D-DS</option>                    
+                    <option selected disabled class="form_select_op" value="">Selecione</option>
+                    <option value="3°_A-NEM" class="form_select_op">3° A-NEM</option>
+                    <option value="3°_B-NEM" class="form_select_op">3° B-NEM </option>
+                    <option value="3°_C-DS" class="form_select_op">3° C-DS</option>                    
+                    <option value="3°_D-DS" class="">3° D-DS</option>                    
                 
                 </select>
 
@@ -59,39 +59,6 @@
 
             </div>
           
-
-            <div class="form_grupo">
-
-                <span class="legenda">Você quer aprender o que ?</span>
-
-                <div class="check-btn">
-                    <input type="checkbox" class="form_new_input" id="html5" name="aprender" value="html5">
-                    <label for="html5" class="form_label check_label"> <span class="check_new_btn"></span> Html5</label>
-                </div>
-
-                <div class="check-btn">
-                    <input type="checkbox" class="form_new_input" id="css3" name="aprender" value="css3">
-                    <label for="css3" class="form_label check_label"><span class="check_new_btn"></span> Css3</label>
-                </div>
-
-                <div class="check-btn">
-                    <input type="checkbox" class="form_new_input" id="jquery" name="aprender" value="jquery">
-                    <label for="jquery" class="form_label check_label"><span class="check_new_btn"></span> jQuery</label>
-                </div>
-
-                <div class="check-btn">
-                    <input type="checkbox" class="form_new_input" id="wordpress" name="aprender" value="wordpress">
-                    <label for="wordpress" class="form_label check_label"><span class="check_new_btn"></span> WordPress</label>
-                </div>
-                
-
-                <div class="form_message">
-                    
-                    <label for="message" class="form_message_label"> Digite aqui sua sua mensagem:</label>
-                    <textarea name="mensagem" id="message" cols="30" rows="3" class="form_input message_input" required></textarea>
-
-                </div>
-
                 <div class="submit">
 
                   <input type="hidden" name="acao" value="enviar">
@@ -100,6 +67,6 @@
                 </div>
         </form>
 
-</div><!--container_form--> 
+</div>
 </body>
 </html>
