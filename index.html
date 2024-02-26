@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body class="body1">
     <div class="container_form">
+
+        <img src="navegadores.png" alt="">
 
         <h1>Formulário de Cadastro</h1>
 
@@ -27,22 +29,6 @@
                 <label for="datanascimento" class="form_label">Data de Nascimento</label>
                 <input type="date" name="datanascimento" class="form_input" id="datanascimento" placeholder="Data de Nascimento" required>
             </div>        
-
-            <div class="form_grupo">
-                
-                <label for="Turma" class="text">Turma</label>
-                <select name="Turma" class="dropdown" required>
-                    
-                    <option selected disabled class="form_select_op" value="">Selecione</option>
-                    <option value="3°_A-NEM" class="form_select_op">3° A-NEM</option>
-                    <option value="3°_B-NEM" class="form_select_op">3° B-NEM </option>
-                    <option value="3°_C-DS" class="form_select_op">3° C-DS</option>                    
-                    <option value="3°_D-DS" class="">3° D-DS</option>                    
-                
-                </select>
-
-            </div>
-
             <div class="form_grupo">
 
                 <span class="legenda">Sexo:</span>
@@ -59,14 +45,12 @@
 
             </div>
           
-                <div class="submit">
-
-                  <input type="hidden" name="acao" value="enviar">
-                  <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
+             <input type="hidden" name="acao" value="enviar">
+             <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
                 
                 </div>
         </form>
 
-</div>
+    </div>
 </body>
 </html>

@@ -4,37 +4,41 @@
 }
 
 .body1{
-    background-color: #4c4c4c;
+    background-color: #733F2D;
 }
 
 .container_form {
 
-    width: 700px;
+    width: 600px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    background:#ffffff; 
-    box-shadow: 1px 0px 1.2px 0px #e3e3e3; 
+    background: #BFA18F; 
     border-radius:3px; 
-    padding:1em;
-    margin-top: 20px;
+    padding:10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    box-shadow: #222222 1px 1px 1px 1px;
 }
 
 .container_form h1 {
     
     font-family:'open_sansregular';
     font-size: 2.3em;
-    color: #000000;
+    color: #733F2D;
     border-bottom: 1px #f0eded solid;
     margin-bottom: 10px;
     padding-bottom: 10px;
-
+    
 }
 
 .form_grupo {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .form_grupo .legenda { 
@@ -44,18 +48,20 @@
     margin-top: 15px;
     margin-bottom: 15px;
     font-weight: bold;
+    
 }
 
 
-.submit { width:100%; float:left; }
+.submit { width:100%; float:right; }
 
 .submit_btn {
 
+    float: right;
     display: block;
     padding: 5px 30px;
     border: none;
     outline: none;
-    background-color: #000000;
+    background-color: #733F2D;
     color: #fff;
     text-shadow: 0 0 5px rgb(0, 0, 0);
     font-family: inherit;
@@ -65,6 +71,7 @@
     margin: 20px auto;
     cursor: pointer;
     transition: all 0.3s;
+    box-shadow: 3px 2px 1px black;
 }
 
 .submit_btn:hover {
@@ -81,8 +88,8 @@
     font-family: inherit;
     color: #222222;
     border-radius: 4px;
-    border: 1px #000000 solid;
-    background: #fdfdfd;
+    border: 1px #f2f2f2 solid;
+    background: #A67F68;
     outline: none;
     padding-left: 10px;
     width: 100%;
@@ -112,7 +119,7 @@
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    border: 0.2em solid #000000;
+    border: 0.2em solid #4c4c4c;
 
 }
 
@@ -122,9 +129,12 @@
     position: absolute;
     left: 50%;
     top: 50%;
+    transform: translate(-50%, -50%);
     width: 8px;
     height: 8px;
     border-radius: 50%;
+    background-color: #733F2D;
+    visibility: hidden;
 
 }
 
@@ -134,7 +144,7 @@
     left: 0;
     height: 20px;
     width: 20px;
-    border: 0.2em solid #000000;
+    border: 0.2em solid #4c4c4c;
 
 }
 
@@ -147,7 +157,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #000000;
+    background-color: #A67F68;
     visibility: hidden;
 
 }
@@ -160,13 +170,13 @@
 
 .form_new_input:checked ~ .radio_label,
 .form_new_input:checked ~ .check_label {
-    color: #000000;
+    color: #733F2D;
 }
 
 
 .form_grupo {
 
-    width: 100%;
+    width: 70%;
     margin-bottom: 20px;
     position: relative;
 
@@ -176,15 +186,13 @@
 
     font-size: 16px;
     font-family: inherit;
-    padding: 8px 1px;
+    padding: 8px 15px;
     border-radius: 4px;
-    border: 1px #000000 solid;
-    background: #fdfdfd;
+    background: #F2F2F0;
     outline: none;
-    width: 100%;
+    width: 93%;
     transition: all 0.3s;
-    display: flex;
-    justify-content: center;
+    box-shadow: 3px 3px 3px black;
 }
 
 .form_message,
@@ -203,76 +211,4 @@
     margin-bottom: 15px;
     font-weight: bold;
     
-}
-
-ul {
-    
-    width:100%; 
-    float:left; 
-    text-align:center; 
-
-}
-
-li {
-
-    padding-right: 20px;
-    display: inline-block;
-    list-style:none;
-
-}
-
-li .menu {
-
-   font-family: 'open_sansbold';
-   font-size:1.6em;
-   text-decoration: none;
-   color:#4c4c4c;
-   -webkit-border-box: 0 1px 0 0 #4c4c4c;
-   border-bottom: 4px solid transparent;
-   -webkit-transition: border-bottom .3s linear;
-
-}
-
-li .menu:hover {
-    
-    border-bottom:4px solid #4c4c4c;
-}
-
-.body2{
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 200px 500px 200px;
-    grid-template-areas:
-    "cb cb cb"
-    "as prin prin"
-    "pe pe pe";
-        
-}
-
-.cb{
-    grid-area: cb;
-    border: 3px solid black;
-}
-
-.as{
-    grid-area: as;
-    padding: 30px;
-    margin: auto;
-    border: 3px solid black;
-}
-
-.materia{
-    width: 200px;
-    display: flex;
-    padding: 2px;
-    box-shadow: 2px 2px 3px black;
-    margin: 10px;
-}
-
-.prin{
-    grid-area: prin;
-    border: 2px solid black;
-}
-
-.pe{
-    grid-area: pe;
 }
