@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="js" href="index.js">
 </head>
 <body class="body2">
     <header class="cb">
@@ -19,20 +20,34 @@
         <div class="texto">
             <p>Por favor, adicione uma matéria para continuar</p>
         </div>
-    <div>
-                
-        <label for="materia" class="text">Sua matéria</label>
-        <select name="materia" class="materia" required>
-            
-            <option selected disabled class="materia" value="">Selecione</option>
-            <option value="Portugues" class="materia">Português</option>
-            <option value="Matematica" class="materia">Matemática<option>
-            <option value="Fisica" class="materia">Física</option>                    
-            <option value="Quimica" class="materia">Química</option>                    
-        
-        </select>
+        <div class="sidebar">
 
-    </div>
+            <button class="sidebar__toggle" type="button" aria-label="Toggle sidebar"></button>
+          
+            <ul class="sidebar__navigation sidebar-navigation">
+          
+              <li class="sidebar-navigation__item">
+                <a class="sidebar-navigation__link" href="#" title="Home">Home</a>
+              </li>
+              <li class="sidebar-navigation__item">
+                <a class="sidebar-navigation__link" href="#" title="Formulários">Formulários</a>
+              </li>
+              <li class="sidebar-navigation__item">
+                <a class="sidebar-navigation__link" href="#" title="Menus Html">Menus Html</a>
+              </li>
+              <li class="sidebar-navigation__item">
+                <a class="sidebar-navigation__link" href="#" title="Galeria de Fotos">Galeria de Fotos</a>
+              </li>
+              <li class="sidebar-navigation__item">
+                <a class="sidebar-navigation__link" href="#" title="Botão Css">Botão Css</a>
+              </li>
+              <li class="sidebar-navigation__item">
+                <a class="sidebar-navigation__link" href="#" title="Templates">Templates</a>
+              </li>
+          
+            </ul>
+          
+          </div>
 
     </aside>
     <main class="prin">
